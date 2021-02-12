@@ -43,5 +43,3 @@ baseName=`echo $read1 | cut -d. -f1`
 cp megahit_out/log ${myDir}/${baseName}.log
 cp megahit_out/options.json ${myDir}/${baseName}.options.json
 cp megahit_out/final.contigs.fa ${myDir}/${baseName}.contigs.fa
-
-
