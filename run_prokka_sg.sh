@@ -15,6 +15,7 @@
 module load prokka
 
 fasta=$1
+#Append _prokka to the end of whatever the text before the last period is
 out=`echo $fasta | sed 's/\.[^.]*$//'`"_prokka"
 
 prokka --cpus 8 --prefix $out $fasta 
